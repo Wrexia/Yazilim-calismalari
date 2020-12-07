@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	
+	int a,faktoriyel=1,sayi;
+	cout << "Faktoriyeli alinacak degeri giriniz:";
+	cin >> sayi;
+	
+	for(a=1 ; a<=sayi ; a++)
+	
+	faktoriyel *= a;
+	cout << "Cevap:" << faktoriyel;
+	
+	return 0;
+}
