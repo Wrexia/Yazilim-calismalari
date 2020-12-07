@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	
+	string id = "oku";
+	string parola = "1234";
+	string id1;
+	string parola1;
+	int hak=3;
+	
+	while (true){
+		
+		cout << "Kullanici adini giriniz:";
+		cin >> id1;
+		
+		cout << "Parolanizi giriniz:";
+		cin >> parola1;
+		
+		if (id==id1 && parola==parola1){
+		
+			cout << "Hosgeldiniz" << endl;
+			break;
+		}
+		else if (id!=id1 && parola==parola1){
+			hak--;
+			cout << "Kullanici adi hatali"<< endl;
+			cout << hak << " Hakkiniz kaldi"<< endl;
+		}
+		else if (id==id1 && parola!=parola1){
+			hak--;
+			cout << "Parola hatali"<< endl;
+			cout << hak << " Hakkiniz kaldi"<< endl;
+		}
+		else {
+			hak--;
+			cout << "Kullanici adi ve Parola hatali"<< endl;
+			cout << hak << " Hakkiniz kaldi"<< endl;
+			
+		if(hak==0)
+			break;
+			
+		else
+			continue;
+		}
+	}
+		
+	return 0;
+}
