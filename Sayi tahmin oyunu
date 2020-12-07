@@ -1,0 +1,30 @@
+#include <iostream>
+#include <conio.h>
+#include <stdlib.h>
+#include <time.h>
+ 
+using namespace std;
+ 
+int main()
+{
+int randomsayi,kullanicisayi;
+srand(time(NULL));
+randomsayi=rand()%100;
+ 
+ 
+do{
+cout<<"Tahmininizi giriniz:";
+cin>>kullanicisayi;
+if(kullanicisayi>randomsayi)
+cout<<"Daha kucuk bir sayi girin"<<endl;
+else if(kullanicisayi<randomsayi)
+cout<<"Daha buyuk bir sayi girin"<<endl;
+else
+break;
+}
+while(randomsayi != kullanicisayi);
+ 
+cout<<"Bildiniz";
+ 
+return 0;
+}
