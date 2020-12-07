@@ -1,0 +1,22 @@
+#include<iostream>
+
+using namespace std;
+ 
+int main()
+{
+	int i, x, sayi1= 0, sayi2= 1, fibo;
+	sayi1 = 0;
+	sayi2 = 1;
+	cout << "Bir sayi giriniz:"; 
+	cin >> x;
+	cout << "Fibonacci serisi:" << endl;
+	
+	for(i = 0; i < x; i++)
+	{
+		cout << sayi1 << endl;
+		fibo = sayi1 + sayi2;
+		sayi1 = sayi2;
+		sayi2 = fibo;
+	}
+  	return 0;
+}
