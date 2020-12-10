@@ -7,7 +7,7 @@ int main(){
 	string parola = "1234";
 	string id1;
 	string parola1;
-	int hak=3;
+	int hak = 3;
 	
 	while (true){
 		
